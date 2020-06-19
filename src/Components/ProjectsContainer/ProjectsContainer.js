@@ -12,9 +12,9 @@ export const ProjectsContainer = () => {
 
   const [pdfProjects, setpdfProjects] = useState([{ src: Brochure1, preview: Brochure1Preview }]);
 
-  const loopProjects = pdfProjects.map((project) => {
+  const loopProjects = pdfProjects.map(function(project, index) {
     console.log('project??? ', project)
-    return <PDFProject {...project} />
+    return <PDFProject key={index} {...project} />
   })
  
 

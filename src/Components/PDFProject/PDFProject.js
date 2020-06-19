@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import Brochure1 from '../../assets/ParentGuide_Final1.pdf'
-import Brochure1Preview from '../../assets/Brochure1-preview.png';
+
 import './PDFProject.scss'
 
 
