@@ -1,4 +1,25 @@
 
 img {
   max-width: 20%;
+  // display: flex;
+}
+
+.embed-brochure {
+  position: relative;
+  z-index: 30 !important;
+}
+
+.div-embed-brochure {
+  position: relative;
+  z-index: 30
+}
+
+.PDFProject {
+  position: relative;
+  z-index:30;
+}
+
+.div-pdfs {
+  position: relative;
+  z-index: 30
 }

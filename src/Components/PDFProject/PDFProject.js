@@ -11,13 +11,12 @@ function PDFProject(project) {
 
   return(
     <div className="PDFProject">
-      <h1>PDF PROJECT</h1>
       <img src={project.preview} alt="Preview of football brochure" onClick={() => setView(true)} />
 
      {pdfOn &&
-     <div onClick={() => setView(false)}>
+     <div className="div-embed-brochure"onClick={() => setView(false)}>
      <embed 
-       className="brochure1-pdf" 
+       className="embed-brochure" 
        src={project.src} 
        type="application/pdf" 
        width="50%" 
