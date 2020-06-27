@@ -17,6 +17,7 @@ function PDFProject(project, props) {
   return (
     <div className="PDFProject">
       {seen && <div className="modal">
+ 
         <div className="modal_content">
           <span className="close" onClick={() => setSeen(false)}>
             &times;
@@ -25,11 +26,12 @@ function PDFProject(project, props) {
             className="embed-brochure"
             src={project.src}
             type="application/pdf"
-            width="100%"
+            width="90%"
             height="100%"
           />
         </div>
-      </div>
+        </div>
+
       }
       <div onClick={() => setSeen(true)}>
         <img src={project.preview} alt="Preview of football brochure" onClick={() => setSeen(true)} />
