@@ -1,28 +1,32 @@
-import React, { Component } from "react";
+import React, {useState} from 'react';
 
-export default class PopUp extends Component {
-  handleClick = () => {
-    this.props.toggle();
-  };
+function PopUp(project) {
+  console.log(project)
 
-  render() {
+  const [seen, setSeen] = useState(true)
+
+
+
     return (
       <div className="modal">
+  
         <div className="modal_content">
-          <span className="close" onClick={this.handleClick}>
+          <span className="close" onClick={() => setSeen(false)}>
             &times;
           </span>
-          <form>
-            <h3>Register!</h3>
-            <label>
-              Name:
-              <input type="text" name="name" />
-            </label>
-            <br />
-            <input type="submit" />
-          </form>
+          <h1>here</h1>
+          <embed 
+              className="embed-brochure" 
+              src={project.src} 
+              type="application/pdf" 
+              width="80%" 
+              height="100%" 
+     />
         </div>
+      
       </div>
     );
-  }
+  
 }
+
+export default PopUp;
