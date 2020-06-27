@@ -1,12 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './PDFProject.scss';
+import PopUp from '../Popup/Popup'
 
 
-function PDFProject() {
 
 
-  return(
+
+function PDFProject(project, props) {
+
+  // const [pdfOn, setView] = useState(false);
+  const [seen, setSeen] = useState(false)
+
+
+
+
+  return (
     <div className="PDFProject">
-      <h1>PDF PROJECT</h1>
+      {seen && <div className="modal">
+ 
+        <div className="modal_content">
+          <span className="close" onClick={() => setSeen(false)}>
+            &times;
+          </span>
+          <embed
+            className="embed-brochure"
+            src={project.src}
+            type="application/pdf"
+            width="90%"
+            height="100%"
+          />
+        </div>
+        </div>
+
+      }
+      <div onClick={() => setSeen(true)}>
+        <img src={project.preview} alt="Preview of football brochure" onClick={() => setSeen(true)} />
+      </div>
     </div>
   )
 }
