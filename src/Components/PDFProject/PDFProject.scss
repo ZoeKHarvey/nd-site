@@ -4,22 +4,52 @@ img {
   // display: flex;
 }
 
-.embed-brochure {
-  position: relative;
-  z-index: 30 !important;
+// .embed-brochure {
+//   position: relative;
+//   // z-index: 30 !important;
+// }
+
+// .div-embed-brochure {
+//   position: relative;
+//   // z-index: 30
+// }
+
+// .PDFProject {
+//   position: relative;
+//   // z-index:30;
+// }
+
+// .div-pdfs {
+//   position: relative;
+//   // z-index: 30
+// }
+
+
+.modal {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
-.div-embed-brochure {
-  position: relative;
-  z-index: 30
+.modal_content {
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
 }
 
-.PDFProject {
-  position: relative;
-  z-index:30;
+.close {
+  color: Black;
+  float: right;
 }
 
-.div-pdfs {
-  position: relative;
-  z-index: 30
+.close:hover {
+  color: cyan;
+  cursor: pointer;
 }
