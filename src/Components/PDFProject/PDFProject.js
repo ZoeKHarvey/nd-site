@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './PDFProject.scss';
 import PopUp from '../Popup/Popup'
 
@@ -8,71 +8,32 @@ import PopUp from '../Popup/Popup'
 
 function PDFProject(project, props) {
 
-  const [pdfOn, setView] = useState(false);
+  // const [pdfOn, setView] = useState(false);
   const [seen, setSeen] = useState(false)
 
 
 
 
-  return(
-   
+  return (
     <div className="PDFProject">
-      {seen &&       <div className="modal">
-  
-  <div className="modal_content">
-    <span className="close" onClick={() => setSeen(false)}>
-      &times;
-    </span>
-    <h1>here</h1>
-    <embed 
-        className="embed-brochure" 
-        src={project.src} 
-        type="application/pdf" 
-        width="80%" 
-        height="100%" 
-/>
-  </div>
-
-</div>
-}
-      <img src={project.preview} alt="Preview of football brochure" onClick={() => setView(true)} />
-
-     {pdfOn &&
-     <div className="div-embed-brochure"onClick={() => setView(false)}>
-     <embed 
-       className="embed-brochure" 
-       src={project.src} 
-       type="application/pdf" 
-       width="50%" 
-       height="500px" 
-       
-     />
-     </div>
-     }
-
-{/* <div className="btn" onClick={() => setSeen(true)}>
-      <button>New User?</button>
-    </div>
-
-    {seen &&
- <div className="modal">
-     <div className="modal_content">
-   <span className="close" onClick={() => setSeen(false)}>&times;    </span>
- <p>I'm A Pop Up!!!</p>
-</div>
-</div>
-} */}
-
-<div>
-        <div className="btn" onClick={() => setSeen(true)}>
-          <button>New User?</button>
+      {seen && <div className="modal">
+        <div className="modal_content">
+          <span className="close" onClick={() => setSeen(false)}>
+            &times;
+          </span>
+          <embed
+            className="embed-brochure"
+            src={project.src}
+            type="application/pdf"
+            width="100%"
+            height="100%"
+          />
         </div>
-        
       </div>
-
-
-
-
+      }
+      <div onClick={() => setSeen(true)}>
+        <img src={project.preview} alt="Preview of football brochure" onClick={() => setSeen(true)} />
+      </div>
     </div>
   )
 }
