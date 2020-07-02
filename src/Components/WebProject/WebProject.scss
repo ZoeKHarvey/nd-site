@@ -1,0 +1,10 @@
+.WebProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.WebProject > iframe {
+  margin-top: 3%;
+}

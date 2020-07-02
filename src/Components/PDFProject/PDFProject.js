@@ -3,16 +3,9 @@ import './PDFProject.scss';
 import PopUp from '../Popup/Popup'
 
 
+function PDFProject(project) {
 
-
-
-function PDFProject(project, props) {
-
-  // const [pdfOn, setView] = useState(false);
   const [seen, setSeen] = useState(false)
-
-
-
 
   return (
     <div className="PDFProject">
@@ -31,7 +24,6 @@ function PDFProject(project, props) {
           />
         </div>
         </div>
-
       }
       <div onClick={() => setSeen(true)}>
         <img src={project.preview} alt="Preview of football brochure" onClick={() => setSeen(true)} />
