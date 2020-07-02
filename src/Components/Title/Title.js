@@ -12,6 +12,8 @@ function Title() {
         <div>
           <p>Niko Demetriou.</p>
           <p>Writer <span>&#8226;</span> Editor</p>
+          {/* button will link to contact */}
+          <button>Inquire</button>
         </div>
       </section>
     )
