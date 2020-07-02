@@ -6,9 +6,10 @@ function Header() {
 
   return(
     <div className="Header">
-      <h1>HEADER</h1>
+      <h1>Icon</h1>
       <a href="#link-about">
       <p>about</p>
+      
       </a>
     </div>
   )

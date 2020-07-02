@@ -1,3 +1,7 @@
+@import "../../utilities/variables.scss";
+
 .Header {
   display: flex;
+  background-color: $light-grey;
+  justify-content: space-around;
 }
