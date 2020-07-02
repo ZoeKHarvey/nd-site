@@ -23,10 +23,12 @@ export const ProjectsContainer = () => {
 
   return(
     <section className="ProjectsContainer">
+      <div className="div-pdf-all">
       <div className="div-pdfs">
        {loopProjects}
       </div>
        <p>Working with TK Interactive, a partner of the NFL, these edits for youth and parent resource guides were done for the “Play Football” program. Content includes safety tips for both parents and children, mental preparation advice, and input from professional athletes and coaches.</p>
+       </div>      
       <WebProject />
       <SampleProject />
     </section>
