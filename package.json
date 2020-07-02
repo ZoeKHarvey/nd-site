@@ -10,6 +10,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "react-spinkit": "^3.0.0",
     "sass": "^1.26.8"
   },
   "scripts": {
