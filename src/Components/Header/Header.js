@@ -7,17 +7,22 @@ function Header() {
   return(
     <div className="Header">
       <h1>Icon</h1>
+      
+      <div className="container cyan brackets">
       <a href="#link-about">
-        <p>The Writer</p>
+        The Writer
       </a>
       <a href="#link-projects">
-        <p>The Work</p>
+        The Work
       </a>
       <a href="#link-contact">
-        <p>The Contacts</p>
+        The Contacts
       </a>
+      </div>
     </div>
   )
 }
 
 export default Header;
+
+
