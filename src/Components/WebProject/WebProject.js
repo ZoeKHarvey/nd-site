@@ -6,7 +6,6 @@ import Spinner from 'react-spinkit'
 function WebProject() {
 
   const [isLoading, setLoading] = useState(true)
-console.log('----->', isLoading)
 
   return(
     <div className="WebProject">
@@ -16,7 +15,7 @@ console.log('----->', isLoading)
           <Spinner
             className="loading text-center"
             name="three-bounce"
-            color="black"
+            color="#424242"
             fadeIn="none"
           />
   
