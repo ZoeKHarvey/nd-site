@@ -1,5 +1,6 @@
 import React from 'react';
 import './Title.scss'
+import NikoPic from '../../assets/niko-sample.jpg'
 
 function Title() {
 
@@ -7,8 +8,11 @@ function Title() {
 
     return(
       <section className="section--welcome-page Title">
-        <p>Niko Demetriou.</p>
-        <p>Writer <span>&#8226;</span> Editor</p>
+        <img src={NikoPic} />
+        <div>
+          <p>Niko Demetriou.</p>
+          <p>Writer <span>&#8226;</span> Editor</p>
+        </div>
       </section>
     )
   

@@ -1,5 +1,25 @@
 @import '../../utilities/variables.scss';
 
-.Title > p {
+.Title {
+  height: 80vh;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.Title > div > p {
   font-family: $fancy-font;
+  font-size: 3em;
+}
+
+.Title > img {
+  width: 20%;
+  align-self: center;
+}
+
+
+.Title > div {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
