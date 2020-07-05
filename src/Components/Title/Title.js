@@ -13,8 +13,8 @@ function Title() {
           <p>Niko Demetriou.</p>
           <p>Writer <span>&#8226;</span> Editor</p>
           {/* button will link to contact */}
-          <a href="#link-contact">
-            <p className="welcome-inqire">Inquire</p>
+          <a href="#link-contact" className="welcome-inqire">
+            Inquire
           </a>
         </div>
       </section>

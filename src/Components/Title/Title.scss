@@ -26,5 +26,14 @@
 
 .welcome-inqire {
   color: $light-grey;
-  background-color: black;
+  background-color: lighten(black, 40);
+  font-family: $fancy-font;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  &:hover {
+    background-color: $light-grey;
+    color: black;
+  }
 }
