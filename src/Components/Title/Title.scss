@@ -1,0 +1,39 @@
+@import '../../utilities/variables.scss';
+
+.Title {
+  height: 80vh;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.Title > div > p {
+  font-family: $fancy-font;
+  font-size: 3em;
+}
+
+.Title > img {
+  width: 20%;
+  align-self: center;
+}
+
+
+.Title > div {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.welcome-inqire {
+  color: $light-grey;
+  background-color: lighten(black, 40);
+  font-family: $fancy-font;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  &:hover {
+    background-color: $light-grey;
+    color: black;
+  }
+}

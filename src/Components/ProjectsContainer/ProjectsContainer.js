@@ -22,7 +22,7 @@ export const ProjectsContainer = () => {
  
 
   return(
-    <section className="ProjectsContainer">
+    <section className="ProjectsContainer" id="link-projects">
       <div className="div-pdf-all">
       <div className="div-pdfs">
        {loopProjects}

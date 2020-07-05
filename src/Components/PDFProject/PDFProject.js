@@ -8,7 +8,7 @@ function PDFProject(project) {
   const [seen, setSeen] = useState(false)
 
   return (
-    <div className="PDFProject">
+    <div className="PDFProject" >
       {seen && <div className="modal">
  
         <div className="modal_content">
